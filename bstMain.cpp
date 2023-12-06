@@ -1,7 +1,6 @@
 
 /*
-  Jasmine Rodriguez
-  COP 3415
+  Jase Rodriguez
   Project 2
   10/31/23
   This program uses standard functions of BST (insert, search, and
@@ -80,7 +79,7 @@ public:
 
 //Inorder tree traversal
 void inorder(itemNode *root) {
-  // Only traverse the node if it's not null.
+  //Traverse the node if it's not null
   if (root != NULL) {
     inorder(root->left); // Go Left.
     cout<< root->name << " ";
@@ -272,7 +271,6 @@ void height_balance(treeNameNode *root)
   fprintf(outFile, "%s:   left height %d, right height %d, difference %d, %s\n", root->treeName, heightLeft, heightRight, diff, isBalanced);
 }
 
-//IN PROGRESS
 //Read input and builds the tree (N, I, Q)
 treeNameNode* buildTree()
 { 
@@ -397,6 +395,7 @@ treeNameNode* buildTree()
 
 int main() 
 {
+  //Open files (change the name if needed)
   inFile = fopen("inFile.txt", "r");
   outFile = fopen("outFile.txt", "w");
 
